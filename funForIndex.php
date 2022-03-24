@@ -1,4 +1,5 @@
 <?php
+//данные для индекса
 function run()
 {
     $siteInfo = [
