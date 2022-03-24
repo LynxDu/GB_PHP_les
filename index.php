@@ -1,4 +1,5 @@
 <?php
+//подгрузка данных
 require_once "funForIndex.php";
 $siteInfo = run();
 ?>
