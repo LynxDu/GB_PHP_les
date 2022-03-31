@@ -1,24 +1,8 @@
 <?php
-//подгрузка данных
-require_once "funForIndex.php";
-$siteInfo = run();
-?>
-<head>
-    <title><?= $siteInfo['title'] ?></title>
-</head>
-<body>
 
-<h1><?= $siteInfo['h1'] ?> </h1>
+require "header.php";
 
-<p> <?= $siteInfo['time'] ?> </p>
+print_r($_SERVER);
 
-<h3> Раздел почемучка </h3>
-<div class = "content">
-    <?php
 
-    pochemuchka();
 
-    ?>
-</div>
-
-</body>
