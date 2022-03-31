@@ -1,13 +1,15 @@
 <?php
 require "../../header.php";
-require_once "les2.php";
-use lessons\les2\les2;
+require_once "les3.php";
+use lessons\les3\les3;
 ?>
 
 <?php
 
-$lesson = new les2();
+$lesson = new les3();
 
 $lesson->pochemuchka();
+
+
 
 ?>

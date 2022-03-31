@@ -1,6 +1,6 @@
 <?php
 
-namespace site\lessons\les2;
+namespace lessons\les2;
 
 class les2
 {
@@ -106,6 +106,7 @@ class les2
             *Написать функцию, которая вычисляет текущее время и возвращает его в формате с<br>
             правильными склонениями, например: 22 часа 15 минут, 21 час 43 минуты.
         </p>
+
         <div id = "clock">
             <?= $this->dateTime(); ?>
         </div>
