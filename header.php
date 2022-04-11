@@ -41,6 +41,7 @@
                 <li><a href="https://localhost/gb_php_ls/lessons/les1/">Задача 1</a></li>
                 <li><a href="https://localhost/gb_php_ls/lessons/les2/">Задача 2</a></li>
                 <li><a href="https://localhost/gb_php_ls/lessons/les3/">Задача 3</a></li>
+                <li><a href="https://localhost/gb_php_ls/lessons/les4/">Задача 4</a></li>
             </ul></li>
     </ul>
 </div>
