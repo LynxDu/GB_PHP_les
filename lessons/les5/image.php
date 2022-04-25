@@ -26,8 +26,6 @@ $dirFile = $file['path'] .'/'. $file['name'];
     $sql1 = "UPDATE `img` SET `popul` = '".($file['popul']+1) ."' WHERE `img`.`id` = ".$imageId;
 //print_r($sql);
     $sqlSelect1 = $db->query($sql1);
-
-
 ?>
 
 
