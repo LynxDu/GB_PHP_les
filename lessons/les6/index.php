@@ -49,3 +49,7 @@ if(isset($_POST['submit'])) {
     }
 }
 
+?>
+
+<a href="https://localhost/gb_php_ls/lessons/les6/dir/"> Каталог </a>
+
