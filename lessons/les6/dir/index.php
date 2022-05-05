@@ -1,12 +1,6 @@
 <?php
 require "../../../header.php";
-require "../../../config/DB.php";
 
-use config\DB;
-
-
-$db = new DB();
-$db->connect();
 /*
  [0] => Array
         (

@@ -1,13 +1,13 @@
 
 <?php
 require "../../../header.php";
-require "../../../config/DB.php";
+//require "../../../config/DB.php";
 
-use config\DB;
+//use config\DB;
 
 
-$db = new DB();
-$db->connect();
+//$db = new DB();
+//$db->connect();
 
 
 
