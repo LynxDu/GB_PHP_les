@@ -2,13 +2,10 @@
 session_start();
 
 require "../../header.php";
-require "../../config/DB.php";
-
-use config\DB;
 
 
-$db = new DB();
-$db->connect();
+
+
 /*
  [0] => Array
         (
@@ -35,11 +32,6 @@ $db->connect();
 <script>
     document.cookie = "idImage=" + <?=5?>; // обновляем только куки с именем 'user'
     //alert(document.cookie); // показываем все куки
-</script>
-<?php $c = $_COOKIE;
-print_r($c);?>
-<script>
-
 </script>
 
 <br>

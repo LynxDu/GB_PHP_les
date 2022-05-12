@@ -1,13 +1,13 @@
 
 <?php
 require "../../../header.php";
-require "../../../config/DB.php";
+//require "../../../config/DB.php";
 
-use config\DB;
+//use config\DB;
 
 
-$db = new DB();
-$db->connect();
+//$db = new DB();
+//$db->connect();
 
 
 
@@ -42,6 +42,7 @@ $path = 'image/'.$file['image'];
     <img src="<?= $path ?>" style="height: 150px; width: 150px;" > <?php }?>
     <p>Описание: <?= $file['coment'] ?></p>
     <p><?="цена: ".$file['count']?></p>
+   <button onclick="">В корзину</button>
 
 
 </div>

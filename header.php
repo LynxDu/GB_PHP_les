@@ -45,5 +45,34 @@
                 <li><a href="https://localhost/gb_php_ls/lessons/les5/">Задача 5</a></li>
                 <li><a href="https://localhost/gb_php_ls/lessons/les6/">Задача 6</a></li>
             </ul></li>
+        <?php
+        //require "C:\\xampp\\htdocs\\gb_php_ls\\config\\DB.php";
+        require "C:\\xampp/htdocs/".explode("/", $_SERVER['REQUEST_URI'])[1] . "/config/DB.php";
+        //print_r($_SERVER['REQUEST_URI']);
+
+
+        use config\DB;
+
+
+        $db = new DB();
+        $db->connect();
+        $userId = $_POST['userId'] ?? null;
+        //INSERT INTO `user` (`id`, `name`, `pass`, `email`) VALUES (NULL, 'admin', 'admin', 'admin@admin.ru');
+        $sql = 'select * from user where id like '.$userId;
+        //print_r($sql);
+        $sqlSelect = $db->query($sql);
+        //print_r($sqlSelect);
+        if (!empty($sqlSelect)){
+        ?>
+            <li><a class="menu-caret"><?=$sqlSelect[0]['name']?></a>
+                <ul>
+                    <a><li>Кабинет</li></a>
+                    <a onclick=""><li>Выйти</li></a>
+                </ul>
+            </li>
+        <?php } else { ?>
+            <li><a class="menu-caret" onclick="document.getElementById('logIn').style.display = 'block'">Войти</a></li>
+        <?php } ?>
     </ul>
 </div>
+<div id="logIn"></div>
